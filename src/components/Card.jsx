@@ -18,7 +18,7 @@ function Card({data, reference}) {
       <div className='absolute footer bottom-0 left-0  w-full'>
         <div className='flex items-center justify-between px-8 py-3 mb-3'>
           <h5 className='text-[#515709]'>{data.fileSize}</h5>
-          <span className='w-7 h-7 bg-[#515709] text-[#fffceb] rounded-full flex items-center justify-center'>
+          <span className={`w-7 h-7 ${data.close ? 'bg-[#770e0a]' : 'bg-[#0a1254]'} text-[#fffceb] rounded-full flex items-center justify-center`}>
             {data.close ? <IoMdClose /> : <LuDownload size={17} />}
           </span>
         </div>
